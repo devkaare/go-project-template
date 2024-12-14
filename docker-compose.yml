@@ -3,7 +3,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-      target: prod
+      target: dev
     restart: unless-stopped
     ports:
       - ${PORT}:${PORT}
