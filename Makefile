@@ -1,4 +1,5 @@
 # Simple Makefile for a Go project
+MAIN_FILE_PATH = cmd/api/main.go
 
 # Build the application
 all: build test
@@ -21,11 +22,11 @@ build: templ-install
 	@echo "Building..."
 	@templ generate
 	
-	@go build -o main cmd/api/main.go
+	@go build -o main $(MAIN_FILE_PATH)
 
 # Run the application
 run:
-	@go run cmd/api/main.go
+	@go run $(MAIN_FILE_PATH)
 # Create DB container
 docker-run:
 	@if docker compose up --build 2>/dev/null; then \
