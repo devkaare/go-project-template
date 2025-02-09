@@ -6,10 +6,10 @@ import (
 	"net/http"
 
 	"github.com/a-h/templ"
+	"github.com/devkaare/go-project-template/cmd/web"
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
 	"github.com/go-chi/cors"
-	"go-project-template/cmd/web"
 )
 
 func (s *Server) RegisterRoutes() http.Handler {

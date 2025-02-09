@@ -9,7 +9,7 @@ import (
 	"syscall"
 	"time"
 
-	"go-project-template/internal/server"
+	"github.com/devkaare/go-project-template/internal/server"
 )
 
 func gracefulShutdown(apiServer *http.Server, done chan bool) {

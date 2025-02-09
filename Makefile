@@ -56,6 +56,7 @@ itest:
 # Clean the binary
 clean:
 	@echo "Cleaning..."
+	@go mod tidy
 	@rm -f main
 
 # Live Reload

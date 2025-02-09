@@ -1,4 +1,4 @@
-module go-project-template
+module github.com/devkaare/go-project-template
 
 go 1.23.3
 

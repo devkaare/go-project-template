@@ -7,9 +7,8 @@ import (
 	"strconv"
 	"time"
 
+	"github.com/devkaare/go-project-template/internal/database"
 	_ "github.com/joho/godotenv/autoload"
-
-	"go-project-template/internal/database"
 )
 
 type Server struct {
